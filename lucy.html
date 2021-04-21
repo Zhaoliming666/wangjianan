@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王儿男</title>
+    <style>
+        /* 内部引用 */
+        /* 选中所有可见元素 */
+        /* * {
+            margin: 0;
+        } */
+ 
+        /* 标签选择器：选中所有标签 慎用 */
+        h2 {
+            color: blueviolet;
+ 
+        }
+ 
+        #aa {
+            background: orange;
+        }
+ 
+        .c1 {
+            font-size: 10px;
+        }
+ 
+        ul li {
+            font-size: 30px;
+        }
+ 
+        ul>li {
+            background: orchid;
+        }
+ 
+        input[name=sex] {
+            border: solid;
+ 
+        }
+ 
+        ol li:first-child {
+            color: green;
+        }
+ 
+        ol::before {
+            content: '🤝';
+        }
+ 
+        ol::after {
+            content: '❤';
+        }
+ 
+        /* h1{
+            color: brown;
+        } */
+    </style>
+    <!-- 外部引入 -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./css/a.css">
+ 
+</head>
+ 
+<body>
+    <!-- 标签可以嵌套 -->
+    <!-- 块级元素，纵向排列，宽度占副元素的100% -->
+    <!-- css书写位置1，内联 极其不推荐🙈 -->
+    <h1 style="color: aqua;">
+        666
+    </h1>
+    <h2 id="aa">
+        777
+    </h2>
+    <h3>
+        888
+    </h3>
+    <p>999</p>
+    <!-- order list -->
+    <ol>
+        <li class="c1">11111</li>
+        <li class="c1">22222</li>
+        <li>33333</li>
+    </ol>
+    <!-- unorder list -->
+    <ul>
+        <li>44444</li>
+        <li>55555</li>
+ 
+        <li>66666</li>
+    </ul>
+    <!-- 行级元素宽度由内容撑开， 可以和行级元素共处一行-->
+    <span>12</span>
+    <span>34</span>
+    <a href="http://css.doyoe.com/">css手册</a>
+    <!-- 单标签 -->
+    <input type="username">
+    <input type="password">
+    <input type="button" value="😎">
+    多选题
+    <input type="checkbox" name="" id="">1
+    <input type="checkbox" name="" id="">2
+    <input type="checkbox" name="" id="">3
+    <input type="checkbox" name="" id="">4
+    单选题
+    <input type="radio" name="sex" id="">女
+    <input type="radio" name="sex" id="">男
+    <img src="https://img2.baidu.com/it/u=3355464299,584008140&fm=26&fmt=auto&gp=0.jpg" alt="">
+</body>
+ 
+</html>

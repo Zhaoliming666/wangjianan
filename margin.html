@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            width: 0px;
+            height: 0px;
+
+        }
+        .box{
+            width: 100px;
+            height: 50px;
+            background-color: tomato;
+            /* 上 右 下 左 */
+            margin: 10px 20px 30px 10px
+            /* 3上 左右 下 */
+            /* 2 上下 左右 */
+
+
+            /* 当兄弟元素上下都有margin的时候 相交部分的外边距重合 具体以大的数值来计算 */
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1" class="box"></div>
+    <div id="div2" class="box"></div>
+    
+</body>
+</html> 

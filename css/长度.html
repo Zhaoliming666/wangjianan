@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>长度</title>
+    <style>
+        /* 像素表示法 */
+    #div1{
+        background-color: brown;
+        width: 80px;
+        height:80px;
+        font-size:30px; ;
+    }
+        /* em:=父元素的字体大小 */
+    #div2{
+        background-color: rgb(243, 235, 235);
+        width: 5em;
+        height: 5em;
+    }
+    #div3 p{
+        background-color: rgb(49, 27, 27);
+        width: 5em;
+        height: 5em;
+    }
+    /* rem root : 1rem 根元素(html)的字体大小px */
+    #div4 {
+        background-color: rgb(49, 27, 27);
+        width: 5em;
+        height: 5em;
+    }
+    #div5 {
+        /* %是父元素宽度 高度来计算 */
+        width:80vw;
+        max-width: 800px;
+        min-width: 600px;
+        background-color: coral;
+        height:50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        666
+        <div id="div3">
+            <p>
+
+            </p>
+     </div>
+        <div>
+          <div id="div 4"></div>
+          <div id="div 5"></div>
+    </div>
+</body>
+</html>

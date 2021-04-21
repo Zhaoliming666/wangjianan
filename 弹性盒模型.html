@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹性盒模型</title>
+    <style>
+    #box1{
+        width: 600px;
+        height: 600px;
+        background-color: tomato;
+        /* 让该元素是弹性盒子 */
+        display: flex;
+
+        /* 决定主轴的方向 */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+        /* 设置交叉轴的方向 交叉轴决定了元素换行的方向 */
+        /* flex-wrap: wrap-reverse; */
+        flex-wrap: wrap;
+        /* 决定了弹性项目沿着主轴的方向怎么排列 */
+        justify-content: space-between;
+        /* 决定了弹性项目沿着交叉轴的方向怎么排列  */
+        align-items: stretch;
+        /* 决定了该项目在主轴方向的占据空间 */
+        flex-basis: 1;
+    }
+    .item{
+        /* 当父元素的宽度不够用时 只压缩弹性项目的padding区（极限是内容的宽度）*/
+        /* margin: 0 20px ;*/
+        border: 0 5px solid #000; 
+        /* padding: 0 20px ; */
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+    #item1{
+        background-color: teal;
+    }
+    #item2{
+        background-color: rgb(115, 128, 0);
+    }
+    #item3{
+        background-color: rgb(11, 128, 0);
+    }
+    #item4{
+        background-color: rgb(0, 9, 128);
+    }
+    #item5{
+        background-color: rgb(128, 0, 60);
+    }
+    #item6{
+        background-color: rgb(217, 213, 223);
+    }
+    </style>
+</head>
+<body>
+    <div id="box1">
+       <div class="item" id="item1">item 1</div>
+       <div class="item" id="item2">item 2</div>
+       <div class="item" id="item3">item 3</div>
+       <div class="item" id="item4">item 4</div>
+       <div class="item" id="item5">item 5</div>
+       <div class="item" id="item6">item 6</div>
+    </div>
+</body>
+</html>
